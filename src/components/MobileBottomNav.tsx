@@ -67,7 +67,7 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   const { siteName } = useSite();
   if (siteName !== 'Youtube') {
     navItems.push({
-      icon: Youtube,
+      icon: Github,
       label: 'Youtube',
       href: 'https://www.youtube.com/',
     });
