@@ -63,16 +63,16 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
     { icon: MountainSnow, label: '日剧', href: '/douban?type=tv&tag=日剧' },
     { icon: VenetianMask, label: '日漫', href: '/douban?type=tv&tag=日本动画' },
   ];
-
-  //const { siteName } = useSite();
-  //if (siteName !== 'Youtube') {
-    //navItems.push({
-      //icon: Github,
-      //label: 'Youtube',
-      //href: 'https://www.youtube.com/',
+/*
+  const { siteName } = useSite();
+  if (siteName !== 'Youtube') {
+    navItems.push({
+      icon: Github,
+      label: 'Youtube',
+      href: 'https://www.youtube.com/',
     });
-  //}
-
+  }
+*/
   const isActive = (href: string) => {
     const typeMatch = href.match(/type=([^&]+)/)?.[1];
     const tagMatch = href.match(/tag=([^&]+)/)?.[1];
