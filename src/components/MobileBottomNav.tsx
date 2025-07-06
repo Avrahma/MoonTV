@@ -70,8 +70,8 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
       //icon: Github,
       //label: 'Youtube',
       //href: 'https://www.youtube.com/',
-    //});
-  }
+    });
+  //}
 
   const isActive = (href: string) => {
     const typeMatch = href.match(/type=([^&]+)/)?.[1];
