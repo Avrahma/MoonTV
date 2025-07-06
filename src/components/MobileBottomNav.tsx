@@ -40,6 +40,11 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
       href: '/douban?type=movie&tag=热门&title=热门电影',
     },
     {
+      icon: Tv,
+      label: '热门剧集',
+      href: '/douban?type=tv&tag=热门&title=热门剧集',
+    },
+    {
       icon: Star,
       label: '豆瓣 Top250',
       href: '/douban?type=movie&tag=top250&title=豆瓣 Top250',
@@ -58,6 +63,15 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
     { icon: MountainSnow, label: '日剧', href: '/douban?type=tv&tag=日剧' },
     { icon: VenetianMask, label: '日漫', href: '/douban?type=tv&tag=日本动画' },
   ];
+
+  const { siteName } = useSite();
+  if (siteName !== 'MoonTV') {
+    navItems.push({
+      icon: Github,
+      label: 'MoonTV',
+      href: 'https://github.com/senshinya/MoonTV',
+    });
+  }
 
   const isActive = (href: string) => {
     const typeMatch = href.match(/type=([^&]+)/)?.[1];
