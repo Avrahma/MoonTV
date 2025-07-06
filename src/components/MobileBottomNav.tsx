@@ -40,11 +40,6 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
       href: '/douban?type=movie&tag=热门&title=热门电影',
     },
     {
-      icon: Tv,
-      label: '热门剧集',
-      href: '/douban?type=tv&tag=热门&title=热门剧集',
-    },
-    {
       icon: Star,
       label: '豆瓣 Top250',
       href: '/douban?type=movie&tag=top250&title=豆瓣 Top250',
